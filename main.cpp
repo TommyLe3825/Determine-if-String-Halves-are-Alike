@@ -6,7 +6,8 @@ public:
         int n = s.length();
         unordered_set<char> vowels = {'a', 'e', 'i', 'o', 'u', 'A', 'E', 'I', 'O', 'U'};
         
-        int countA, countB = 0;
+        int countA = 0;
+        int countB = 0;
         
         // Count vowels in the first half
         for (int i = 0; i < n / 2; ++i) {
