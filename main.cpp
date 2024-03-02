@@ -8,14 +8,14 @@ public:
         
         int countA, countB = 0;
         
-        // Count vowels in the first half (a)
+        // Count vowels in the first half
         for (int i = 0; i < n / 2; ++i) {
-            if (vowels.find(s[i]) != vowels.end()) {
+            if (vowels.find(s[i]) != vowels.end()) { //if there is no vowels, it would return vowels.end()
                 countA++;
             }
         }
         
-        // Count vowels in the second half (b)
+        // Count vowels in the second half
         for (int i = n / 2; i < n; ++i) {
             if (vowels.find(s[i]) != vowels.end()) {
                 countB++;
